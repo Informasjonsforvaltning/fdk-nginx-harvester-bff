@@ -1,6 +1,6 @@
 FROM nginx:alpine
 
-RUN mkdir -p /data/nginx/cache -chmod 777
+RUN mkdir -p /data/nginx/cache
 RUN chmod 777
 
 ENV TZ=Europe/Oslo
