@@ -1,6 +1,7 @@
 FROM nginx:alpine
 
-RUN mkdir -p /data/nginx/cache
+RUN mkdir -p /data/nginx/cache -chmod 777
+RUN chmod 777
 
 ENV TZ=Europe/Oslo
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
